@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppService } from './app.service';
+import { DataService } from './core/services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +18,7 @@ export class AppComponent {
 
   isLoggedIn = false
 
-  constructor(public appService: AppService) {
+  constructor(public appService: DataService) {
     console.log(appService.getData());
   }
 }
