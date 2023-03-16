@@ -19,3 +19,18 @@
 <div *ngIf="!isLoggedIn">Por favor inicia sesión.</div>
 
 <app-layout></app-layout>
+
+<input [value]="fullName" />
+<div [title]="fullName">Pasa el mouse por encima</div>
+
+<button (click)="onClick()">¡Haz clic en mí!</button>
+<br />
+<input (change)="onChange($event)" />
+<br />
+<input (input)="onInput($event)" />
+<br />
+<input [(ngModel)]="fullName" />
+<br />
+<button (click)="hideLayout()">Ocultar Layout</button>
+<br />
+<app-layout *ngIf="isShowLayout"></app-layout>
