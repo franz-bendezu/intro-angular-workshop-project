@@ -1,1 +1,9 @@
 <p>layout works!</p>
+<p>Input value: {{ inputValue }}</p>
+<button (click)="increment()">Increment</button>
+
+<br/>
+{{dataService.data}}
+<input [(ngModel)]="currentItem">
+<br/>
+<button (click)="addData()">Agregar item</button>

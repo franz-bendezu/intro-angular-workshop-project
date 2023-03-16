@@ -9,4 +9,8 @@ export class DataService {
   getData() {
     return this.data;
   }
+
+  addData(name: string) {
+    this.data = this.data.concat(name);
+  }
 }

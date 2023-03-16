@@ -4,7 +4,7 @@ import { DataService } from '../../services/data.service';
 @Component({
   selector: 'app-examples',
   templateUrl: './examples.component.html',
-  styleUrls: ['./examples.component.css']
+  styleUrls: ['./examples.component.css'],
 })
 export class ExamplesComponent {
   title = 'project 123';
@@ -38,5 +38,10 @@ export class ExamplesComponent {
   isShowLayout = true;
   hideLayout() {
     this.isShowLayout = false;
+  }
+
+  initialValue = 5;
+  onIncremented($event: number) {
+    console.log(this.initialValue, $event);
   }
 }

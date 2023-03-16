@@ -34,3 +34,8 @@
 <button (click)="hideLayout()">Ocultar Layout</button>
 <br />
 <app-layout *ngIf="isShowLayout"></app-layout>
+
+<app-layout
+  [inputValue]="initialValue"
+  (incremented)="onIncremented($event)"
+></app-layout>
